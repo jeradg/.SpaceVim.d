@@ -12,14 +12,14 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "OceanicNext"
-    colorscheme_bg = "dark"
+    colorscheme = 'OceanicNext'
+    colorscheme_bg = 'dark'
     # Enable guicolors; OceanicNext needs 24bit true colors
     enable_guicolors = true
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
-    statusline_separator = "nil"
-    statusline_iseparator = "bar"
+    statusline_separator = 'nil'
+    statusline_iseparator = 'bar'
     buffer_index_type = 4
     windows_index_type = 3
     enable_tabline_filetype_icon = true
@@ -27,73 +27,90 @@
     statusline_unicode_symbols = true
     # Enable vim compatible mode, avoid changing origin vim key bindings
     vimcompatible = true
-    snippet_engine = "neosnippet"
-    disabled_plugins = ["deoplete.nvim"]
+    snippet_engine = 'neosnippet'
+    disabled_plugins = ['deoplete.nvim']
     # misc
     relativenumber=false
+    autocomplete_method="coc"
 
 # Enable autocomplete layer
 [[layers]]
-name = 'autocomplete'
-autocomplete_method = "coc"
-auto_completion_return_key_behavior = "complete"
-auto_completion_tab_key_behavior = "cycle"
+    name = 'autocomplete'
+    auto_completion_return_key_behavior = 'complete'
+    auto_completion_tab_key_behavior = 'smart'
+    enable = false
 
 [[layers]]
-name = 'shell'
-default_position = 'top'
-default_height = 30
+    name = 'shell'
+    default_position = 'top'
+    default_height = 30
 
 [[layers]]
-name = 'git'
+    name = 'git'
 
 [[layers]]
-name = "lang#ruby"
+    name = 'VersionControl'
 
 [[layers]]
-name = "lang#elixir"
+    name = 'lang#ruby'
 
 [[layers]]
-name = "lang#javascript"
+    name = 'lang#elixir'
 
 [[layers]]
-name = "lang#typescript"
+    name = 'lang#javascript'
 
 [[layers]]
-name = "treesitter"
+    name = 'lang#typescript'
+
+[[layers]]
+    name = 'lang#html'
+
+[[layers]]
+    name = 'lang#css'
+
+[[layers]]
+    name = 'lsp'
+
+[[layers]]
+    name = 'treesitter'
 
 [[custom_plugins]]
-repo = "mhartington/oceanic-next"
-merged = false
+    repo = 'mhartington/oceanic-next'
+    merged = false
 
 [[custom_plugins]]
-name = "chrisbra/csv.vim"
-merged = false
+    name = 'chrisbra/csv.vim'
+    merged = false
 
 [[custom_plugins]]
-repo = "neoclide/coc.nvim"
-merged = false
+    repo = 'neoclide/coc.nvim'
+    merged = false
 
 [[custom_plugins]]
-repo = "sheerun/vim-polyglot"
-merged = false
+    repo = 'NullVoxPopuli/coc-ember'
+    merged = false
 
 [[custom_plugins]]
-repo = "tpope/vim-abolish"
-merged = false
+    repo = 'sheerun/vim-polyglot'
+    merged = false
 
 [[custom_plugins]]
-repo = "nvim-lua/plenary.nvim"
-merged = false
+    repo = 'tpope/vim-abolish'
+    merged = false
 
 [[custom_plugins]]
-repo = "nvim-telescope/telescope.nvim"
-merged = false
+    repo = 'nvim-lua/plenary.nvim'
+    merged = false
 
 [[custom_plugins]]
-repo = "nvim-telescope/telescope-fzf-native.nvim"
-merged = false
+    repo = 'nvim-telescope/telescope.nvim'
+    merged = false
 
 [[custom_plugins]]
-repo = "nvim-treesitter/nvim-treesitter"
-merged = false
+    repo = 'nvim-telescope/telescope-fzf-native.nvim'
+    merged = false
+
+[[custom_plugins]]
+    repo = 'nvim-treesitter/nvim-treesitter'
+    merged = false
