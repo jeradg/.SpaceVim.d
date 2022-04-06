@@ -1,6 +1,8 @@
 function! custom_setup#before() abort
     nnoremap <C-P> :Telescope find_files theme=dropdown<cr>
-    nnoremap <C-[> :Telescope buffers theme=dropdown<cr>
+    " " FIXME: "C-[" is an alias for ESC, and we don't want
+    " " Telescope opening on ESC!
+    " nnoremap <C-[> :Telescope buffers theme=dropdown<cr>
 
     call SpaceVim#custom#SPCGroupName(['/'], '+Telescope')
     call SpaceVim#custom#SPC('nore', ['/', 'p'], 'Telescope find_files theme=dropdown', 'find_files', 1)
