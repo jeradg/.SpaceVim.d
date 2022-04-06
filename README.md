@@ -5,7 +5,7 @@ My SpaceVim config
 ## Installation
 
 1. Install SpaceVim
-2. Remove the auto-installed ~/.SpaceVim.d
+2. Remove the auto-installed `~/.SpaceVim.d`
     ```
     rm -rf ~/.SpaceVim.d
     ```
